@@ -1,0 +1,133 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', Arial, sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: url('https://2.bp.blogspot.com/-r8TviXkrDt0/VHRmEttBDyI/AAAAAAAAAGI/KD5nXrFtzJc/s1600/Cool-Wallpaper.jpg') no-repeat center center/cover;
+}
+
+/* Container */
+.login-container {
+  background: rgba(255, 255, 255, 0.05);
+  width: 340px;
+  padding: 50px 30px 30px;
+  backdrop-filter: blur(12px);
+  border-radius: 15px;
+  text-align: center;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+  position: relative;
+  color: white;
+  animation: fadeIn 0.8s ease;
+}
+
+/* Avatar */
+.avatar {
+  background: #ffffff;
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  margin: 0 auto;
+  position: absolute;
+  left: 50%;
+  top: -45px;
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
+}
+
+.avatar img {
+  width: 40px;
+  height: 40px;
+  filter: brightness(0);
+}
+
+/* Title */
+h2 {
+  margin: 20px 0 25px;
+  font-size: 22px;
+  font-weight: 600;
+  color: #ffffff;
+}
+
+/* Input group */
+.input-group {
+  position: relative;
+  margin: 18px 0;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 12px 40px 12px 12px;
+  border: none;
+  border-radius: 6px;
+  outline: none;
+  background: rgba(255, 255, 255, 0.15);
+  color: #fff;
+  font-size: 14px;
+  transition: 0.3s ease;
+}
+
+.input-group input:focus {
+  background: rgba(255, 255, 255, 0.25);
+  box-shadow: 0 0 8px rgba(255, 255, 255, 0.4);
+}
+
+.input-group .icon {
+  position: absolute;
+  right: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 16px;
+  color: #ddd;
+}
+
+/* Button */
+button {
+  width: 100%;
+  padding: 12px;
+  background: linear-gradient(135deg, #ff3838, #e60073);
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 6px;
+  margin-top: 15px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+button:hover {
+  background: linear-gradient(135deg, #121c8b, #5e17eb);
+  transform: scale(1.02);
+}
+
+/* Forgot password link */
+.forgot {
+  margin-top: 18px;
+  font-size: 14px;
+}
+
+.forgot a {
+  color: #6fb8ff;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.forgot a:hover {
+  text-decoration: underline;
+  color: #ffffff;
+}
+
+/* Fade-in animation */
+@keyframes fadeIn {
+  0% { opacity: 0; transform: translateY(-15px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
